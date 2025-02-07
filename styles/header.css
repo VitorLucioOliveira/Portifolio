@@ -1,0 +1,90 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Garante alinhamento vertical */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    z-index: 1000;
+    transition: 0.5s;
+
+}
+
+.cabecalho.scrolled {
+    background-color: var(--cabecalho-color);
+    box-shadow: 0 0 10px var(--cor-principal);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.arroba {
+    color: var(--cor-destaque);
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 1em;
+    padding: 1em 2em;
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.item_menu {
+    text-decoration: none;
+    color: var(--cor-principal);
+    padding: 0.5em 2em;
+}
+
+.link_item_menu {
+    text-decoration: none;
+    color: var(--cor-destaque);
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 1em;
+    position: relative;
+}
+
+
+
+.link_item_menu:hover {
+    color: var(--cor-destaque);
+    transition: 0.5s;
+}
+
+.link_item_menu::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-destaque);
+    position: absolute;
+    bottom: -5px;
+    /* Ajuste para posicionar a linha abaixo do texto */
+    left: 0;
+    transition: width 0.5s;
+    /* Adicione a transição aqui */
+}
+
+.link_item_menu:hover::after {
+    width: 100%;
+}
+
+.botao_tema {
+    height: 2.5em;
+    /* Ajuste a altura da imagem */
+    width: auto;
+    /* Mantém a proporção da imagem */
+
+    transition: filter 1s;
+    /* Transição suave de 1 segundo */
+
+}
+
+.botao_tema:hover {
+    filter: drop-shadow(0 0 8px #B0D7FE);
+    /* Adiciona uma sombra azul */
+}

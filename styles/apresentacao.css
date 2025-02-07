@@ -1,0 +1,57 @@
+
+
+
+.apresentacao {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.titulo {
+    font-size: 8em;
+    font-weight: bold;
+    color: var(--cor-destaque);
+    font-family: var(--fonte-primaria);
+    text-shadow: 4px 4px 4px var(--cor-principal);
+    
+}
+
+.descricao {
+    color: var(--cor-principal);
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em;
+    justify-content: center;
+}
+
+.botao_download{
+    background-color: var(--background-color);
+    color:  var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.8em ;
+}
+
+.botao_download:hover{
+    background-color: var(--cor-destaque);
+    color: var(--background-color);
+    transition: 0.5s;
+}
+
+.light .botao_download{
+    background-color: var(--cor-destaque);
+    color: var(--background-color);
+    border: 1px solid var(--background-color);
+}
+
+.light .botao_download:hover{
+    background-color: var(--background-color);
+    color:  var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+}
