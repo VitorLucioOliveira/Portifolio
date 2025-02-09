@@ -1,0 +1,23 @@
+.descricao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    padding: 4em 2em;
+    margin: 6em auto;
+    max-width: 1200px;
+}
+
+.foto{
+    width: 40%;
+    border-radius: 3%;
+    box-shadow: 8px 8px 8px var(--cor-principal);
+    object-fit: cover;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

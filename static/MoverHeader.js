@@ -8,3 +8,12 @@ window.addEventListener("scroll", () => {
     cabecalho.classList.remove("scrolled");
   }
 });
+
+
+const sobre = document.getElementById("sobre");
+const botao_sobre = document.getElementById("botao_sobre");
+
+botao_sobre.addEventListener("click", (event) => { 
+  event.preventDefault();
+  sobre.scrollIntoView({behavior: "smooth"});
+});
