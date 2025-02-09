@@ -61,6 +61,7 @@
     border-top: 15px solid var(--background-color);
 }
 
+
 @keyframes descer {
     0% {
         transform: translate(-50%, 0);

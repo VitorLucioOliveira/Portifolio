@@ -5,6 +5,7 @@
 @import url('styles/header.css');
 @import url('styles/apresentacao.css');
 @import url('styles/descricao.css');
+@import url('styles/projetos.css');
 
 :root{
     --background-color: #18181B;

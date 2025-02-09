@@ -16,8 +16,18 @@
     object-fit: cover;
 }
 
-.subtitulo {
+.paragrafo_descricao{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    color: var(--cor-principal);
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em;
+    text-align: justify;
+}
+
+.paragrafo_descricao_light{
+    color: var(--background-color);
 }
