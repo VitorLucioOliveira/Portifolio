@@ -6,6 +6,7 @@
 @import url('styles/apresentacao.css');
 @import url('styles/descricao.css');
 @import url('styles/projetos.css');
+@import url('styles/certificados.css');
 
 :root{
     --background-color: #18181B;
@@ -26,6 +27,10 @@
 body{
     background-color: var(--background-color);
     
+}
+
+.titulo_tela_light{
+    color: var(--background-color);
 }
 
 .light{

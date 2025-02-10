@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="icon" href="img/imagem.png" type="image/x-icon" />
-    <script src="main.js" defer></script>
     <title>Portifolio - Vitor Lúcio</title>
   </head>
 
@@ -17,32 +20,50 @@
           <a href="#" class="link_item_menu" id="botao_sobre">Sobre</a>
         </li>
         <li class="item_menu">
-          <a href="#" class="link_item_menu" id="botao_menu">Projetos</a>
+          <a href="#" class="link_item_menu" id="botao_projetos">Projetos</a>
         </li>
         <li class="item_menu">
-          <a href="#" class="link_item_menu" id="botao_menu">Contato</a>
+          <a href="#" class="link_item_menu" id="botao_certificados">Certificados</a>
         </li>
         <li class="item_menu">
-          <img src="img/claro.png" alt="tema" class="botao_tema" />
+          <a href="#" class="link_item_menu" id="botao_contato">Contato</a>
+        </li>
+        <li class="item_menu">
+          <img src="img/icons/claro.png" alt="tema" class="botao_tema" />
         </li>
       </ul>
     </header>
 
     <main>
       <!-- Primeira tela -->
-      <section class="container apresentacao">
+      <section class="container apresentacao" id="apresentacao">
         <div class="conteudo">
-          <h1 class="titulo">&lt;Vitor Lúcio/&gt;</h1>
-          <p class="subtitulo">Desenvolvedor FullStack!</p>
+          <h1 class="titulo">&lt;Vitor Lúcio&gt;</h1>
+          
+          <div class="redes-sociais">
+            <a class="icone-contato" href="mailto:vitor.lucio.0916@gmail.com" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            
+            <a class="icone-contato" href="https://github.com/VitorLucioOliveira" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+
+            <a  class="icone-contato" href="https://www.linkedin.com/in/vitor-lucio-oliveira/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>            </a>
+          </div>
+          
           <a href="curriculo.pdf" download="curriculo.pdf">
             <button class="botao_download">Download Currículo</button>
           </a>
         </div>
         <div class="seta"></div>
       </section>
+      
+
       <!-- Segunda Tela -->
       <section class="container descricao" id="sobre">
-        <img src="img/Screenshot_1.png" alt="imagem" class="foto" />
+        <img src="img/1 (1).png" alt="imagem" class="foto" />
 
         <div class="paragrafo_descricao">
           <p>
@@ -67,85 +88,58 @@
         </div>
       </section>
       <!-- Terceira Tela -->
-      <section class="container projetos" id="projetos">
-        <div class="projeto">
-          <img src="img/1 (1).png" alt="MET Museum" class="projeto-img" />
-          <div class="projeto-conteudo">
-            <h3 class="projeto-titulo">MET Museum</h3>
-            <p class="projeto-descricao">
-              Projeto experimental desenvolvido para estudo e prática de Next.js 13+,
-              integrando a API pública do The Metropolitan Museum of Art.
-            </p>
-            <div class="projeto-links">
-              <a href="#" class="projeto-link">Repositório</a>
-              <a href="#" class="projeto-link">Demo</a>
-            </div>
-            <div class="projeto-tags">
-              <span class="tag">Next.js 13</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Tailwind CSS</span>
-            </div>
+      <section class="container tela-projetos">
+        <h2 class="titulo_projetos">--Projetos--</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper" id="projetos">
+            <!-- <div class="projeto-item swiper-slide">
+              <img src="img/1 (1).png" alt="MET Museum" class="projeto-img" />
+              <div class="projeto-conteudo">
+                <h3 class="projeto-titulo">MET Museum</h3>
+                <p class="projeto-descricao">
+                  Projeto experimental desenvolvido para estudo e prática de
+                  Next.js 13+, integrando a API pública do The Metropolitan
+                  Museum of Art.
+                </p>
+                <div class="projeto-links">
+                  <a href="#" class="projeto-link">Repositório</a>
+                  <a href="#" class="projeto-link">Demo</a>
+                </div>
+                <div class="projeto-tags">
+                  <span class="tag">Next.js 13</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Tailwind CSS</span>
+                </div>
+              </div>
+            </div> -->
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="projeto">
-          <img src="img/1 (1).png" alt="MET Museum" class="projeto-img" />
-          <div class="projeto-conteudo">
-            <h3 class="projeto-titulo">MET Museum</h3>
-            <p class="projeto-descricao">
-              Projeto experimental desenvolvido para estudo e prática de Next.js 13+,
-              integrando a API pública do The Metropolitan Museum of Art.
-            </p>
-            <div class="projeto-links">
-              <a href="#" class="projeto-link">Repositório</a>
-              <a href="#" class="projeto-link">Demo</a>
-            </div>
-            <div class="projeto-tags">
-              <span class="tag">Next.js 13</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Tailwind CSS</span>
-            </div>
+      </section>
+      <!-- Quarta Tela -->
+      <section class="container tela-certificados">
+        <h2 class="titulo_certificados">--Certificados--</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper" id="certificados">
+            <!-- <div class="certificado-item swiper-slide">
+              <img
+                src="img/1 (1).png"
+                alt="MET Museum"
+                class="certificado-img"
+              />
+              <div class="certificado-conteudo">
+                <h3 class="certificado-titulo">MET Museum</h3>
+              </div>
+            </div> -->
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="projeto">
-          <img src="img/1 (1).png" alt="MET Museum" class="projeto-img" />
-          <div class="projeto-conteudo">
-            <h3 class="projeto-titulo">MET Museum</h3>
-            <p class="projeto-descricao">
-              Projeto experimental desenvolvido para estudo e prática de Next.js 13+,
-              integrando a API pública do The Metropolitan Museum of Art.
-            </p>
-            <div class="projeto-links">
-              <a href="#" class="projeto-link">Repositório</a>
-              <a href="#" class="projeto-link">Demo</a>
-            </div>
-            <div class="projeto-tags">
-              <span class="tag">Next.js 13</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Tailwind CSS</span>
-            </div>
-          </div>
-        </div>
-        <div class="projeto">
-          <img src="img/1 (1).png" alt="MET Museum" class="projeto-img" />
-          <div class="projeto-conteudo">
-            <h3 class="projeto-titulo">MET Museum</h3>
-            <p class="projeto-descricao">
-              Projeto experimental desenvolvido para estudo e prática de Next.js 13+,
-              integrando a API pública do The Metropolitan Museum of Art.
-            </p>
-            <div class="projeto-links">
-              <a href="#" class="projeto-link">Repositório</a>
-              <a href="#" class="projeto-link">Demo</a>
-            </div>
-            <div class="projeto-tags">
-              <span class="tag">Next.js 13</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Tailwind CSS</span>
-            </div>
-          </div>
-        </div>
-        
       </section>
     </main>
+    <script src="static/CarregarProjetos.js"></script>
+    <script src="static/CarregarCertificados.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="static/MoverHeader.js"></script>
+    <script src="static/MudarTema.js"></script>
   </body>
 </html>
