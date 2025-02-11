@@ -1,0 +1,28 @@
+footer{
+    background-color: var(--cabecalho-color);
+    color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    font-family: var(--fonte-principal);
+}
+
+footer p{
+    color: var(--cor-principal);
+    font-weight: 600;
+}
+
+.redes-sociais2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espaçamento entre ícones */
+}
+
+.numero {
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

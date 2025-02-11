@@ -12,7 +12,7 @@
 .foto{
     width: 40%;
     border-radius: 3%;
-    box-shadow: 8px 8px 8px var(--cor-principal);
+    box-shadow: 4px 4px 4px var(--cor-principal);
     object-fit: cover;
 }
 
@@ -20,14 +20,20 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    color: var(--cor-principal);
-    font-family: var(--fonte-primaria);
-    font-weight: bold;
-    font-size: 1.5em;
+    color: var(--cor-destaque2);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2em;
     padding: 1em;
     text-align: justify;
+    border-radius: 3%;
+    background-color: var(--cabecalho-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
 }
 
 .paragrafo_descricao_light{
-    color: var(--background-color);
+    color: var(--cor-destaque);
+    border-radius: 3%;
+    background-color: var(--cabecalho-color);
+    box-shadow: 8px 8px 8px var(--cor-principal);
 }

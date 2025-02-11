@@ -1,6 +1,6 @@
 
 
-const botao_tema = document.querySelector('.botao_tema');
+const botao_tema = document.getElementById('botao_tema');
 const tema = document.querySelector('.titulo');
 const botao_dowload = document.querySelector('.botao_download');
 const seta = document.querySelector('.seta');
