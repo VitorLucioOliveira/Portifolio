@@ -8,6 +8,7 @@ const paragrafo = document.querySelector('.paragrafo_descricao');
 const titulo_projetos = document.querySelector('.titulo_projetos');
 const titulo_certificados = document.querySelector('.titulo_certificados');
 const icones_contato = document.querySelectorAll('.icone-contato');
+const texto_rodape = document.querySelector('.texto_rodape');
 
 botao_tema.addEventListener('click', () => {
     document.body.classList.toggle('light');
@@ -17,6 +18,7 @@ botao_tema.addEventListener('click', () => {
     titulo_projetos.classList.toggle('titulo_tela_light');
     titulo_certificados.classList.toggle('titulo_tela_light');
     botao_dowload.classList.toggle('botao_download_light');
+    texto_rodape.classList.toggle('texto_rodape_light');
     
     icones_contato.forEach(icone => {
         icone.classList.toggle('icone-contato_light');

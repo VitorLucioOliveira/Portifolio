@@ -6,13 +6,18 @@ footer{
     align-items: center;
     padding: 1.5rem;
     font-size: 1.2rem;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-primaria);
 }
 
-footer p{
+.texto_rodape{
     color: var(--cor-principal);
     font-weight: 600;
 }
+
+.texto_rodape_light{
+    color: var(--cor-destaque);
+}
+
 
 .redes-sociais2 {
     display: flex;
