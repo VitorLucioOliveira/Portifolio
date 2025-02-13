@@ -38,10 +38,7 @@
 
 
 
-.swiper {
-    width: 100%;
-    height: 70%;
-}
+
   /* Cor do bullet ativo */
   .swiper-pagination-bullet-active {
     background-color: var(--cor-principal) !important; /* Vermelho mais forte para indicar a página ativa */

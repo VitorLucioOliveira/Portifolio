@@ -74,8 +74,6 @@
     font-size: 0.875rem;
 }
 
-
-
 .swiper {
     width: 100%;
     height: 70%;
@@ -86,10 +84,26 @@
     opacity: 1; /* Totalmente visível */
   }
   
-@media (max-width: 1220px) {
-    
+
+  @media (max-width: 1220px) {
     .container.tela-projetos {
-        padding: 4em 2em; /* Reduzindo o espaçamento para telas menores */
+        padding: 6em 2em; /* Reduzindo o espaçamento para telas menores */
     }
 
+    .projeto-item {
+        min-height: auto; /* Alterado para auto */
+    }
+
+    .projeto-img {
+        height: 10em; /* Reduzindo a altura da imagem para telas menores */
+    }
+
+    .projeto-conteudo {
+        padding: 0.5rem; /* Reduzindo o padding para telas menores */
+    }
+
+    .swiper {
+        width: 100%;
+        height: 80%;
+    }
 }
