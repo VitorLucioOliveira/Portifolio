@@ -46,3 +46,13 @@ botao_contato.addEventListener("click", (event) => {
   event.preventDefault();
   tela_contato.scrollIntoView({behavior: "smooth"});
 });
+
+
+// Seleciona o botão de menu e o menu
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+// Adiciona um evento de clique ao botão de menu
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active'); // Alterna a classe "active" no menu
+});

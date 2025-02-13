@@ -86,3 +86,10 @@
     opacity: 1; /* Totalmente visível */
   }
   
+@media (max-width: 1220px) {
+    
+    .container.tela-projetos {
+        padding: 4em 2em; /* Reduzindo o espaçamento para telas menores */
+    }
+
+}
