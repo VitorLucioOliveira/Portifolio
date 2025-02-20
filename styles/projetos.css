@@ -85,7 +85,7 @@
   }
   
 
-  @media (max-width: 1220px) {
+  @media (max-width: 1400px) {
     .container.tela-projetos {
         padding: 6em 2em; /* Reduzindo o espaçamento para telas menores */
     }
