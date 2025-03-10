@@ -10,7 +10,7 @@
 }
 
 .foto{
-    width: 40%;
+    width: 50%;
     max-width: 1200px;
     border-radius: 3%;
     box-shadow: 4px 4px 4px var(--cor-principal);
@@ -18,7 +18,7 @@
 }
 
 .paragrafo_descricao{
-    width: 100%;
+    width: 50%;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
