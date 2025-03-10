@@ -13,7 +13,7 @@
 
 .foto {
     width: 100%;
-    max-width: 400px; /* Define um limite para a imagem */
+    max-width: 500px; /* Define um limite para a imagem */
     height: auto; /* Mantém a proporção */
     border-radius: 3%;
     box-shadow: 4px 4px 4px var(--cor-principal);
