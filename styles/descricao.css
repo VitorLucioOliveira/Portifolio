@@ -11,6 +11,13 @@
     overflow: hidden; /* Impede vazamento de elementos */
 }
 
+.foto_descricao p{
+    padding: .5em;
+    text-align: center;
+    color: var(--cor-destaque);
+    font-size: small;
+}
+
 .foto {
     width: 100%;
     max-width: 500px; /* Define um limite para a imagem */
@@ -53,4 +60,6 @@
     .paragrafo_descricao {
         width: 90%;
     }
+
+    
 }
