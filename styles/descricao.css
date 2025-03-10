@@ -1,25 +1,28 @@
 .descricao {
     display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem a linha se necessário */
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4em;
+    gap: 2em; /* Reduzi o espaçamento para evitar excesso */
     padding: 4em 2em;
     margin: 6em auto;
     max-width: 1200px;
+    overflow: hidden; /* Impede vazamento de elementos */
 }
 
-.foto{
-    width: 50%;
-    max-width: 1200px;
+.foto {
+    width: 100%;
+    max-width: 400px; /* Define um limite para a imagem */
+    height: auto; /* Mantém a proporção */
     border-radius: 3%;
     box-shadow: 4px 4px 4px var(--cor-principal);
     object-fit: cover;
 }
 
-.paragrafo_descricao{
-    width: 50%;
-    max-width: 1200px;
+.paragrafo_descricao {
+    flex: 1; /* Faz com que o texto se ajuste ao espaço disponível */
+    max-width: 600px; /* Impede que o texto se espalhe demais */
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -31,30 +34,23 @@
     border-radius: 12px;
     background-color: var(--cabecalho-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    
-
+    word-wrap: break-word; /* Garante que o texto não ultrapasse os limites */
+    overflow: hidden;
 }
 
-.paragrafo_descricao_light{
-    color: var(--cor-destaque);
-    border-radius: 12px;
-    background-color: var(--cabecalho-color);
-    box-shadow: 8px 8px 8px var(--cor-principal);
-}
-
-
-@media (max-width: 1200px){
-    .descricao{
+@media (max-width: 768px) {
+    .descricao {
         flex-direction: column;
-        gap: 2em;
+        align-items: center;
+        text-align: center;
     }
 
-    .foto{
-        width: 100%;
+    .foto {
+        width: 80%;
+        max-width: 300px;
     }
 
-    .paragrafo_descricao{
-        width: 100%;
-        
+    .paragrafo_descricao {
+        width: 90%;
     }
 }

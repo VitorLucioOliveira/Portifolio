@@ -49,3 +49,9 @@ body{
     height: 100vh;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        min-height: 100vh; /* Garante que não fique menor que a tela */
+    }
+}
