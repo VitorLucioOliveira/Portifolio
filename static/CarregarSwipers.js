@@ -1,6 +1,14 @@
 import initSwiper from "./initSwiper.js";
 const projetos = [
   {
+    titulo: "CatGod",
+    descricao: "CatGod é um bot para Discord com diversas funcionalidades para utilidade do servidor e entreterimento.",
+    imagem: "img/projetos/CatGod.png",
+    link_demo: "https://discord.com/oauth2/authorize?client_id=1330563169197883452",
+    link_git: "https://github.com/VitorLucioOliveira/DiscordBot",
+    tags: ["Bot", "Python", "Discord"],
+  },
+  {
     titulo: "Fokus",
     descricao:
       "Fokus é uma aplicação web para usar o método Pomodoro (técnica de gestão de tempo) que ajuda a aumentar a produtividade e a concentração",
