@@ -3,6 +3,17 @@
     text-align: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100vh;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.8s ease-in-out;
+}
+
+.apresentacao.mostrar {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .titulo {
@@ -11,16 +22,41 @@
     color: var(--cor-destaque);
     font-family: var(--fonte-primaria);
     text-shadow: 4px 4px 4px var(--cor-principal);
-
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.8s ease-in-out 0.2s;
 }
-
-
 
 .redes-sociais {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.8s ease-in-out 0.4s;
+}
+
+.botao_download {
+    background-color: var(--background-color);
+    color: var(--cor-destaque);
+    border: 1px solid var(--cor-destaque);
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 0.8em;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.8s ease-in-out 0.6s;
+}
+
+.apresentacao.mostrar .titulo,
+.apresentacao.mostrar .redes-sociais,
+.apresentacao.mostrar .botao_download {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .icone-contato {
@@ -58,41 +94,6 @@
     height: 30px;
 }
 
-
-.botao_download {
-    background-color: var(--background-color);
-    color: var(--cor-destaque);
-    border: 1px solid var(--cor-destaque);
-    width: 25%;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    padding: 0.8em; 
-    font-weight: 600;
-}
-
-.botao_download:hover {
-    background-color: var(--cor-destaque);
-    color: var(--background-color);
-    transition: 0.5s;
-    border: 1px solid var(--background-color);
-   
-}
-
-
-.botao_download_light{
-    background-color: var(--background-color);
-    color: var(--cor-destaque);
-    border: none;
-    
-}
-
-.botao_download_light:hover{
-    background-color: var(--cor-principal);
-    color: var(--background-color);
-    border: none;
-}
-
 .seta {
     position: absolute;
     bottom: 20px;
@@ -103,7 +104,6 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 15px solid var(--cor-principal);
-    /* Cor da seta */
     animation: descer 1.5s infinite;
     margin-bottom: 20px;
 }
@@ -111,7 +111,6 @@
 .light_seta {
     border-top: 15px solid var(--background-color);
 }
-
 
 @keyframes descer {
     0% {
@@ -132,18 +131,18 @@
 
 @media (max-width: 1200px) {
     .apresentacao {
-        padding: 1.8em; 
+        padding: 1.8em;
     }
-    
-    .titulo {     
-        font-size: 2.5rem;    
+
+    .titulo {
+        font-size: 2.5rem;
     }
-    
+
     .subtitulo {
         font-size: 1.5em;
     }
 
-    .botao_download{
+    .botao_download {
         width: 50%;
     }
 }

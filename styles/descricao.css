@@ -9,9 +9,19 @@
     margin: 6em auto;
     max-width: 1200px;
     overflow: hidden; /* Impede vazamento de elementos */
+    
+    /* Animação inicial */
+    opacity: 0;
+    transform: translateY(50px); /* Desloca para baixo */
+    transition: all 0.8s ease-in-out; /* Suavidade na transição */
 }
 
-.foto_descricao p{
+.descricao.mostrar {
+    opacity: 1;
+    transform: translateY(0); /* Retorna à posição original */
+}
+
+.foto_descricao p {
     padding: .5em;
     text-align: center;
     color: var(--cor-destaque);
@@ -60,6 +70,4 @@
     .paragrafo_descricao {
         width: 90%;
     }
-
-    
 }
