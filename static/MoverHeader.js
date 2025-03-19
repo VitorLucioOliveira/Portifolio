@@ -39,7 +39,7 @@ botao_certificados.addEventListener("click", (event) => {
 });
 
 // Tela Contato
-const tela_contato = document.getElementById("apresentacao");
+const tela_contato = document.querySelector(".tela-contato");
 const botao_contato = document.getElementById("botao_contato");
 
 botao_contato.addEventListener("click", (event) => {
@@ -55,4 +55,12 @@ const menu = document.querySelector('.menu');
 // Adiciona um evento de clique ao botão de menu
 menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active'); // Alterna a classe "active" no menu
+});
+
+const tela_inicial = document.getElementById("apresentacao");
+const botao_arroba = document.getElementById("arroba");
+
+botao_arroba.addEventListener("click", (event) => {
+  event.preventDefault();
+  tela_inicial.scrollIntoView({behavior: "smooth"});
 });

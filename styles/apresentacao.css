@@ -24,7 +24,7 @@
     text-shadow: 4px 4px 4px var(--cor-principal);
     opacity: 0;
     transform: translateY(-50px);
-    transition: all 0.8s ease-in-out 0.2s;
+   
 }
 
 .redes-sociais {
@@ -49,8 +49,30 @@
     font-weight: 600;
     opacity: 0;
     transform: translateY(-50px);
-    transition: all 0.8s ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
 }
+
+.botao_download:hover {
+    background-color: var(--cor-destaque);
+    color: var(--background-color);
+    transition: 0.5s;
+    border: 1px solid var(--background-color);
+
+}
+
+.botao_download_light{
+    background-color: var(--background-color);
+    color: var(--cor-destaque);
+    border: none;
+
+}
+
+.botao_download_light:hover{
+    background-color: var(--cor-principal);
+    color: var(--background-color);
+    border: none;
+}
+
 
 .apresentacao.mostrar .titulo,
 .apresentacao.mostrar .redes-sociais,

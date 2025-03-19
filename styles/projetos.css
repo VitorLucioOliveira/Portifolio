@@ -1,6 +1,7 @@
 .container.tela-projetos {
     margin-bottom: 0;
-    padding: 6em 12em 6em 12em;
+    padding: 6em 12em 0em 12em;
+    height: 90vh;
 }
 
 .titulo_projetos {
@@ -87,7 +88,9 @@
 
   @media (max-width: 1400px) {
     .container.tela-projetos {
-        padding: 6em 2em; /* Reduzindo o espaçamento para telas menores */
+        padding: 0em 2em; /* Reduzindo o espaçamento para telas menores */
+        margin-bottom:0 ;
+       
     }
 
     .projeto-item {
@@ -104,6 +107,6 @@
 
     .swiper {
         width: 100%;
-        
+        height: 50%;
     }
 }

@@ -10,6 +10,7 @@
 @import url('styles/projetos.css');
 @import url('styles/certificados.css');
 @import url('styles/switch.css');
+@import url('styles/contato.css');
 @import url('styles/footer.css');
 
 :root{
@@ -45,9 +46,6 @@ body{
     
 }
 
-.container {
-    height: 100vh;
-}
 
 @media screen and (max-width: 768px) {
     .container {

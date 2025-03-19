@@ -37,7 +37,7 @@ const projetos = [
   {
     titulo: "CodeConnect",
     descricao:
-      "CodeConnect é uma página web que simula o envio de formulários para a plataforma homônima, utilizando HTML, CSS e JavaScript. Através dela, o usuário pode enviar uma imagem, nome, descrição e tags personalizadas de um projeto.",
+      "CodeConnect é uma página web que simula o envio de formulários para a plataforma homônima. Através dela, o usuário pode enviar uma imagem, nome, descrição e tags personalizadas de um projeto.",
     imagem: "img/projetos/code_connect.png",
     link_demo: "https://code-connect-alura.vercel.app",
     link_git: "https://github.com/VitorLucioOliveira/CodeConnect-Alura",

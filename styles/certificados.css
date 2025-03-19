@@ -1,6 +1,6 @@
 .container.tela-certificados {
     margin-bottom: 0;
-    padding: 3em 12em 3em 12em;
+    padding: 6em 12em 0em 12em;
     height: 70vh;
 }
 
@@ -15,9 +15,8 @@
     background-color: var(--cabecalho-color);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    max-height: fit-content;
+    max-height: 330px;
     overflow: hidden;
-
 }
 
 .certificado-img {
@@ -46,10 +45,17 @@
   }
 
 
-  @media (max-width: 1220px) {
+  @media (max-width:1400px) {
+    
+    
     
     .container.tela-certificados {
-        padding: 4em 2em; /* Reduzindo o espaçamento para telas menores */
+        padding: 0em 2em; /* Reduzindo o espaçamento para telas menores */
+        min-height: 90vh; /* Garante que não fique menor que a tela */
+    }
+
+    .certificado-item {
+        max-height: fit-content; /* Alterado para auto */
     }
 
 }
