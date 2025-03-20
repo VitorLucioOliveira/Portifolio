@@ -51,7 +51,6 @@
     
     .container.tela-certificados {
         padding: 0em 2em; /* Reduzindo o espaçamento para telas menores */
-        min-height: 90vh; /* Garante que não fique menor que a tela */
     }
 
     .certificado-item {
