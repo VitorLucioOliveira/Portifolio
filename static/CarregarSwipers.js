@@ -1,6 +1,14 @@
 import initSwiper from "./initSwiper.js";
 const projetos = [
   {
+     titulo: "Slice Heaven",
+    descricao: "Em conjunto com meus colegas Vitor Militão e Diego Polanski, um protótipo completo de sistema para uma pizzaria como parte da disciplina Engenharia de Software 2",
+    imagem: "img/projetos/slice_heaven.png",
+    link_demo: "https://github.com/militaovitor01/slice-haven-frontend",
+    link_git: "https://github.com/militaovitor01/sliceheaven.api",
+    tags: ["API Stripe", "Spring Boot", "Java", "MySQL", "React"],
+  },
+  {
     titulo: "CatGod",
     descricao: "CatGod é um bot para Discord com diversas funcionalidades para utilidade do servidor e entreterimento.",
     imagem: "img/projetos/CatGod.png",
