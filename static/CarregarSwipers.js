@@ -1,6 +1,14 @@
 import initSwiper from "./initSwiper.js";
 const projetos = [
   {
+    titulo: "Urna Online",
+    descricao:"Este projeto consiste em uma aplicação de votação em tempo real com foco no estudo e aplicação prática dos protocolos de rede TCP e UDP",
+    link_demo: "https://github.com/VitorLucioOliveira/Redes/tree/main/Trabalhos/Trabalho%20Pratico",
+    link_git: "https://github.com/NagibAlexandre/Redes",
+    imagem: "img/projetos/urna.png",
+    tags: ["Java", "TCP", "UDP", "Socket", "Java Swing"],
+  },
+  {
      titulo: "Slice Heaven",
     descricao: "Em conjunto com meus colegas Vitor Militão e Diego Polanski, um protótipo completo de sistema para uma pizzaria como parte da disciplina Engenharia de Software 2",
     imagem: "img/projetos/slice_heaven.png",
