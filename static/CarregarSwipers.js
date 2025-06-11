@@ -108,6 +108,10 @@ const certificados = [
     imagem: "img/certificados/HTML_CSS_JS.png",
   },
   {
+    titulo: "a Introdução à Internet das Coisas com Firebase | PUC Minas",
+    imagem: "img/certificados/firebase.png",
+  },
+  {
     titulo: "Masterclass de Excel na Prática | Academia BePro",
     imagem: "img/certificados/excel.png",
   },
